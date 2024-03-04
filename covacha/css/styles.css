@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Anta', sans-serif;
+    font-size: 20px;
+}
+
+body{
+    background-color: #d16e11;
+}
+/* -------------------header con navbar para todas las paginas--------------------------------*/
+.header{
+    background-color: #2c5567;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    width: 100%;
+    padding: 5px 5%;
+    position: fixed;
+}
+
+.header .logo{
+    cursor: pointer;
+}
+
+.header .logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+img[src='img/logo.png']:hover{  /*utilizo selector por atributo*/
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;    
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: #eceff1;
+    text-decoration: none;    
+}
+
+.header .nav-links li a:hover{
+    color: #ffbc0e;
+}
+
+.header .btn button{
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover{
+    background-color: #257194;
+    color: #e98137;
+    transform: scale(1.1);
+}
+/* --------------------------------------main----banner -------------------------------------------*/
+.contenido{
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+.banner{
+    padding-top: 50px;
+    height: auto;
+    width: 100%;
+}
+.banner img{
+    height: auto;
+    width: 100%;
+
+}
+/* ------------------------Intro INDEX------------------------------------- */
+
+.intro{
+    width: 100%;
+    height: auto;
+    
+}
+.intro h1{
+    text-align: center;
+}
+.intro p{
+    padding: 10px;
+}
+/*-------------------footer general---------------------------------------*/
+#footer{        /*uso el id en vez de la etiqueta*/
+    margin-top: 100px;
+    background-color:  #2c5567;
+    display: flex;
+    width: 100%;
+    height: 200px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+footer .logo img{
+    margin-top: 10px;
+    height: 150px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.socials a{
+    margin: 10px;
+}
+.socials a:hover{
+    transform: scale(1.2);
+    
+}
+.text:hover{
+    color: #d16e11;
+    transform: scale(1.5);
+    cursor:crosshair;
+
+}
+
+/*---------Pagina Sorteos-----------------------*/
+.sorteos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ganadores{
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+}
+
+/*-------------Torneos------------------*/
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid #1b3039;
+    border-radius: 15%;
+    box-shadow: 0 0 10px rgba(4, 1, 111, 0.9);
+    padding: 5px;
+    
+}
+form div{
+    margin-bottom: 10px;
+}
+input:valid{
+    border: 3px solid green
+}
+input:invalid{
+    border: 3px solid red
+}
+
+/*--------Noticias-------------------------------------*/
+.noticias{
+    width: 100%;
+    height: auto;
+}
+.not1{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 30px;
+    border: 5px solid #1b3039;
+    background: linear-gradient(45deg, rgb(239, 224, 9), rgb(178, 113, 8));
+   
+}
+.not2{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    border: 5px solid #1b3039;
+    background: linear-gradient(45deg, rgb(239, 224, 9), rgb(233, 82, 6));
+   
+}
+.not1 .noti{
+    text-align: center;
+    margin: 0px 0px 0px 10px;
+}
+.not1{
+    filter: grayscale();
+}
+.not2{
+    filter: grayscale();
+}
+.not1:hover{
+    filter: none;
+}
+.not2:hover{
+    filter: none;
+}
+.not1 .noti2{
+    text-align: center;
+    margin: 0px 0px 0px 10px;
+}
+/*----------------Juegos--------------------*/
+.juegos{
+    width: 100%;
+    overflow: hidden;
+}
+.juegos .csgo{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 30px;
+    border: 5px solid #1b3039;
+    background: linear-gradient(45deg, rgb(239, 224, 9), rgb(178, 113, 8));
+}
+.juegos .fornite{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 30px;
+    border: 5px solid #1b3039;
+    background: linear-gradient(45deg, rgb(239, 224, 9), rgb(178, 113, 8));
+}
+.juegos .lol{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 30px;
+    border: 5px solid #1b3039;
+    background: linear-gradient(45deg, rgb(239, 224, 9), rgb(178, 113, 8));
+}
+.juegos img{
+    border-radius: 30%;
+}
+
+
+
+
+
+
+
